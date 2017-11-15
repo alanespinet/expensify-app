@@ -14,26 +14,6 @@ const store = configureStore();
 console.log( store.getState() );
 
 
-store.dispatch( addExpense({
-  description: 'videogames',
-  amount: 1000,
-  createdAt: 500
-}) );
-
-store.dispatch( addExpense({
-  description: 'yuki videogames',
-  amount: 500,
-  createdAt: 1000
-}) );
-
-store.dispatch( addExpense({
-  description: 'new rent',
-  amount: 1500
-}) );
-
-// store.dispatch( setTextFilter('') );
-
-
 const jsx = (
   <Provider store={store}>
     <AppRouter />
